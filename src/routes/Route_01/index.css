@@ -1,0 +1,15 @@
+.profile {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+    /* min-height: 100vh; */
+    overflow: hidden;
+}
+
+.is-active {
+    transition-property: transform;
+    transform: scale(1.8);
+    transition-duration: 10000ms;
+}

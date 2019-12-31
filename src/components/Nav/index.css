@@ -1,0 +1,210 @@
+.nav-toggle_background {
+    height: 4.45rem;
+    color: none;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    text-align: right;
+    background-color: #dfdfdf00;
+}
+
+.nav-logo {
+    color: #1d1d1d;
+    position: fixed;
+    left: 1rem;
+    top: .05rem;
+    font-weight: 500;
+    padding: 1rem;
+}
+
+.nav-logo.active {
+    color: #dfdfdf;
+    transition-duration: 300ms;
+}
+
+.nav-toggle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5rem;
+    height: 2rem;
+    padding: 1rem;
+    position: fixed;
+    top: 1.05rem;
+    right: 1rem;
+    z-index: 2000;
+    background: none;
+    font-size: 1.15rem;
+    font-weight: 500;
+    border: none;
+    color: #1d1d1d;
+    opacity: 0.9;
+    transition-delay: 600ms;
+    transition-duration: 1200ms;
+}
+
+.nav-toggle.active {
+    pointer-events: none;
+    opacity: 0;
+    transition-delay: 0ms;
+    transition-duration: 300ms;
+}
+
+.list {
+    pointer-events: none;
+    opacity: 0;
+    position: fixed;
+    z-index: 3000;
+    top: 80px;
+    right: 3rem;
+    transition-property: all;
+    transition-duration: 0ms;
+    color: #dfdfdf;
+}
+
+.list-fullwidth {
+    top: 26vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
+    font-size: 1.33rem;
+}
+
+.list.active {
+    pointer-events: all;
+    transition-property: all;
+    transition-duration: 1800ms;
+    transition-delay: 800ms;
+    opacity: 1;
+}
+
+.nav-link {
+    border: 1px solid rgba(255, 255, 255, 0.712);
+    font-size: inherit;
+    text-align: right;
+    text-decoration: none;
+    color: inherit;
+    opacity: 0.8;
+    padding: 0.15em 1em 0.25em 1em;
+    transition-duration: 100ms;
+  }
+
+.nav-link.last {
+    padding: 0.15em 1em 0.25em 1em;
+  }
+  
+.nav-link:hover {
+    color: inherit;
+    opacity: 1;
+  }
+
+.nav-link-active, .nav-link-active:hover {
+    border: 1px solid #c6ca53;
+    color: #c6ca53;
+    transition-property: color border;
+    transition-delay: 1000ms 1000ms;
+}
+
+.modal {
+    background-color: #dfdfdf;
+    background-size: cover;
+    background-position-x: right;
+    opacity: 0;
+    pointer-events: none;
+    display: inherit;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 1000px;
+    width: 100%;
+    z-index: 500;
+    transition-property: opacity;
+    transition-duration: 1200ms;
+    transition-delay: 600ms;
+}
+
+.modal.active {
+    transition-property: opacity;
+    transition-duration: 1200ms;
+    transition-delay: 0ms;
+    pointer-events: all;
+    opacity: 0.8;
+}
+
+/* Nav Background */
+/* Base Class for Nav Box Elements */
+.box {
+    opacity: 1;
+    background: #1d1d1d;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 20.05vw;
+    height: 33vh;
+    transform: translateY(-33vh);
+    transition-property: transform;
+    transition-timing-function: cubic-bezier(0.19, 1, 0.22, 0.98);
+    transition-timing-function: ease;
+    transition-duration: 800ms;
+}
+
+.box.active {
+    /* background: #1d1d1d; */
+    transition-property: transform;
+    transition-timing-function: cubic-bezier(0.19, 1, 0.22, 0.98);
+    transition-timing-function: ease;
+    transform: translateY(0);
+    transition-duration: 900ms;
+}
+
+.box-0 {
+    left: 0;
+    transition-delay: 222ms;
+}
+
+.box-0.box.active {
+    transition-delay: 88ms;
+}
+
+.box-1 {
+    left: 20vw;
+    /* width:20.02vw; */
+    transition-delay: 100ms;
+}
+
+.box-1.active {
+    transition-delay: 111ms;
+}
+
+.box-2 {
+    left: 40vw;
+    /* width: 20vw; */
+    transition-delay: 144ms;
+}
+
+.box-2.active {
+    transition-delay: 128ms;
+}
+
+.box-3 {
+    left: 60vw;
+    /* width:20vw; */
+    transition-delay: 66ms;
+}
+
+.box-3.active {
+    transition-delay: 222ms;
+}
+
+.box-4 {
+    left: 80vw;
+    /* width:20vw; */
+    transition-delay: 44ms;
+}
+
+.box-4.active {
+    transition-delay: 327ms;
+}

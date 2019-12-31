@@ -1,0 +1,7 @@
+.footer {
+    position: fixed;
+    top: 30vh;
+    right: 3rem;
+    font-size: 16px;
+    text-align: right;
+}

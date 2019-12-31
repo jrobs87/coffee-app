@@ -1,0 +1,109 @@
+.block-container {
+    width: 100%;
+    max-height: 67vh;
+    height: 67vh;
+    margin-top: none;
+    overflow: hidden;
+}
+
+.block-background {
+    position: relative;
+    top: 0;
+    background-image: url(../../img/camp-coffee.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: inherit;
+    height: inherit;
+}
+
+.block-background.active {
+    transition-property: all;
+    transition-timing-function: ease;
+    transition-duration: 42000ms;
+    transform: scale(1.65) translateX(2%);
+}
+
+.block-content {
+    height: inherit;
+}
+
+.block-cover {
+    width: 101%;
+    position: relative;
+    top: -67vh;
+    z-index: 200;
+    transition-property: transform;
+    transition-duration: 1200ms;
+    transition-delay: 600ms;
+    transform: translateY(-67vh);
+    transition-timing-function: cubic-bezier(0.855, 0.03, 0.515, 0.755);
+    background: #dfdfdf;
+    height: 101%;
+}
+
+.block-cover.active {
+    transform: translateY(0);
+}
+
+/* .block-button {
+    position: fixed;
+    bottom: 200px;
+    right: 200px;
+    z-index: 2000;
+} */
+
+.header-container {
+    overflow: hidden;
+    /* height: 6rem; */
+    position: absolute;
+    text-align: right;
+    z-index: 300;
+    left: 0rem;
+}
+
+.header {
+    background: #c6ca53ec;
+    padding: 0.85em 2em 0.05em 2em;
+    width: 40vw;
+    opacity: 1;
+    transition-property: all;
+    transition-duration: 1200ms;
+    transition-timing-function: ease;
+    transform: translateY(-4em);
+    border-bottom-right-radius:0px;
+}
+
+.header p {
+    opacity: 0;
+    font-weight: 300;
+    color: #1d1d1d;
+    transition-delay: 2650ms;
+    transition-property: opacity;
+    transition-duration: 2900ms;
+    font-size: 1.45rem;
+}
+
+.header.active p {
+    opacity: 1;
+}
+
+.header.active {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 1650ms;
+}
+
+.line {
+    height: 1px;
+    background: #1d1d1d1f;
+    position: relative;
+    transition-property: all;
+    transform: translateX(-100vw);
+    transition-duration: 1800ms;
+    transition-timing-function: ease;
+}
+
+.line.active {
+    transform: translateX(100vw);
+}
